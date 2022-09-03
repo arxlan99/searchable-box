@@ -4,6 +4,9 @@ const CodePiece = () => {
   return (
     <div className="codepiece__container">
       <div className="code__block">
+        <button title="copy code" className="code__copy">
+          <img src="/assets/copy.svg" alt="" width={20} />
+        </button>
         <div>{`import { Command } from 'cmdk';`}</div>
         <div>{`<Command.Dialog open={open} onOpenChange={setOpen}>`}</div>
         <div>{`<Command.Input />`}</div>
