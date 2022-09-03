@@ -1,0 +1,16 @@
+.toggle {
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 1rem;
+  border: 1px solid #e6e6e6;
+  transition: all 0.2s ease-in-out;
+  background-color: #f3f4f6;
+  color: #171717;
+}
+
+.toggle:hover {
+  cursor: pointer;
+  background-color: #dfeced;
+}
