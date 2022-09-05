@@ -2,7 +2,7 @@
 
 > Simple [React](http://facebook.github.io/react/index.html) component for a search input, providing a filter function.
 
-### [Demo](https://enkidevs.github.io/react-search-input)
+### [Demo](https://searchable-box.vercel.app/)
 
 ## Install
 
