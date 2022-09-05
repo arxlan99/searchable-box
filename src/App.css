@@ -30,7 +30,7 @@
 }
 
 .header__title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
 }
@@ -207,6 +207,10 @@
 
 .code__copy:active {
   transform: scale(0.8);
+}
+
+.settings__container {
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 768px) {

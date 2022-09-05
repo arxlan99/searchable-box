@@ -1,8 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Searchable.css';
-import useClickOutside from '../hooks/useClickHandler';
 import PropTypes from 'prop-types';
-import BoxItem from './BoxItem';
+
+const useClickOutside = (handler) => {
+  let domNode = useRef();
+
+  useEffect(() => {
+    let maybeHandler = (event) => {
+      if (!domNode.current.contains(event.target)) {
+        handler();
+      }
+    };
+
+    document.addEventListener('mousedown', maybeHandler);
+
+    return () => {
+      document.removeEventListener('mousedown', maybeHandler);
+    };
+  });
+
+  return domNode;
+};
 
 const SearchableBox = (props) => {
   const { darkTheme, children, title, alwaysOpen, items } = props;

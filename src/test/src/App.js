@@ -1,18 +1,3 @@
-# react-searchable-component
-
-> Simple [React](http://facebook.github.io/react/index.html) component for a search input, providing a filter function.
-
-### [Demo](https://enkidevs.github.io/react-search-input)
-
-## Install
-
-```bash
-npm install react-searchable-component
-```
-
-## Example
-
-```javascript
 import React, { useState } from 'react';
 import { SearchableBox, BoxItem } from 'react-searchable-component';
 
@@ -74,5 +59,3 @@ function App() {
 }
 
 export default App;
-
-```
