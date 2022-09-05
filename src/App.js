@@ -54,16 +54,29 @@ function App() {
           </div>
           <div className="header__element">
             <div className="header__install">
-              <span>npm install searchable</span>
-              <span className="header__install_box">
-                <img src="/assets/copy.svg" alt="" width={16} />
-              </span>
+              <a
+                href="https://www.npmjs.com/package/react-searchable-component"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>npm i react-searchable-component</span>
+              </a>
             </div>
             <div className="header__link">
-              <span>
-                <img src="/assets/github.png" alt="" width={16} />
-              </span>
-              <span>arxlan/cmdk</span>
+              <a
+                href="https://github.com/arxlan99/searchable-box"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span
+                  style={{
+                    marginRight: 10,
+                  }}
+                >
+                  <img src="/assets/github.png" alt="" width={16} />
+                </span>
+                <span>arxlan/searchable-box</span>
+              </a>
             </div>
           </div>
         </div>
